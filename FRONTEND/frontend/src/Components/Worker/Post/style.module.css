@@ -1,0 +1,91 @@
+.worker_profile_container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.profile_card,
+.form_card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.worker_name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.worker_info {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.section_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.job_list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.job_item {
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.job_date {
+  color: #999;
+  font-size: 0.9em;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form_input,
+.form_textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.form_textarea {
+  resize: vertical;
+}
+
+.submit_button {
+  padding: 12px;
+  background-color: #26a826;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit_button:hover {
+  background-color: #32cd32;
+}
+.profile_card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid ;
+}
+.header{
+  justify-content: center;
+  text-align: center;
+}

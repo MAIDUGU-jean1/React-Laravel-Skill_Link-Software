@@ -1,0 +1,80 @@
+.form_container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form_container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form textarea {
+  resize: vertical;
+  height: 100px;
+}
+.create_btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: forestgreen;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.create_btn:hover {
+  background-color: darkgreen;
+} 
+
+
+  .error {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: white;
+  font-size: 14px;
+  z-index: 1000;
+  animation: fadeOut 3s forwards;
+}
+
+/* Success and error styles */
+.success {
+  background-color: #22c55e; /* green */
+}
+
+.error {
+  background-color: #ef4444; /* red */
+}
+
+/* Optional fade-out animation */
+@keyframes fadeOut {
+  0%   { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}

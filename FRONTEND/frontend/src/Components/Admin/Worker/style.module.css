@@ -1,0 +1,115 @@
+.CreateBtn a{
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: green;
+}
+.CreateBtn a:hover{
+    background-color: darkgreen;
+}
+.jean{
+    display: flex;
+    gap: 250px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.tableContainer {
+  overflow-x: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-top: 20px;
+
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+  color: #333;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+.editBtn {
+  padding: 6px 12px;
+  margin-right: 8px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editBtn:hover {
+  background-color: #2980b9;
+}
+
+.deleteBtn:hover {
+  background-color: #c0392b;
+}
+
+img {
+  width: 100px;
+  border-radius:  50px;
+
+}
+
+
+.error {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: white;
+  font-size: 14px;
+  z-index: 1000;
+  animation: fadeOut 3s forwards;
+}
+
+/* Success and error styles */
+.success {
+  background-color: #22c55e; /* green */
+}
+
+.error {
+  background-color: #ef4444; /* red */
+}
+
+/* Optional fade-out animation */
+@keyframes fadeOut {
+  0%   { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
