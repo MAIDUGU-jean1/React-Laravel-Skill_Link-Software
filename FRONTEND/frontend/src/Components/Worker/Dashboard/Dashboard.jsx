@@ -37,7 +37,7 @@ const Dashboard = () => {
 <main className={Style.main_content}>
       <header>
         <h1>Welcome, <span id="userName">{data.worker?.name}</span>!</h1>
-        <p>Your role: <span id="userRole">{data.worker?.role}</span></p>
+        <p>Your role: <span id="userRole">worker</span></p>
       </header>
       <section className={Style.dashboard_body}>
         <p>This is your dashboard where you'll manage everything </p>
