@@ -27,7 +27,8 @@ class LoginController extends Controller
             if (Auth::guard('admin')->attempt($credentials)) {
                 $admin = Auth::guard('admin')->user();
                 $token = $admin->createToken('auth_token')->plainTextToken;
-
+                $admin->remember_token = $token;
+                $admin->save();
                 return response()->json([
                     'message' => 'Login successful',
                     'user' => $admin,
@@ -38,7 +39,8 @@ class LoginController extends Controller
             if (Auth::guard('worker')->attempt($credentials)) {
                 $worker = Auth::guard('worker')->user();
                 $token = $worker->createToken('auth_token')->plainTextToken;
-
+                $worker->remember_token = $token;
+                $worker->save();
                 return response()->json([
                     'message' => 'Login successful',
                     'user' => $worker,

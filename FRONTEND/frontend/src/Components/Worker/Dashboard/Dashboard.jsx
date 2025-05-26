@@ -10,8 +10,8 @@ const Dashboard = () => {
 
     try {
        const token = localStorage.getItem('token');
-       
-      await axios.get('http://127.0.0.1:8000/api', {},
+
+      await axios.get('http://localhost:8000/api/worker/dashboard',
         {
            headers: {
            Authorization: `Bearer ${token}`
@@ -36,8 +36,8 @@ const Dashboard = () => {
 <SideBar/>
 <main className={Style.main_content}>
       <header>
-        <h1>Welcome, <span id="userName">User</span>!</h1>
-        <p>Your role: <span id="userRole">{data.worker?.name}</span></p>
+        <h1>Welcome, <span id="userName">{data.worker?.name}</span>!</h1>
+        <p>Your role: <span id="userRole">{data.worker?.role}</span></p>
       </header>
       <section className={Style.dashboard_body}>
         <p>This is your dashboard where you'll manage everything </p>

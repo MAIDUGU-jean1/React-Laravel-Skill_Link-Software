@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Admin extends Authenticatable
 {
-    use HasFactory, HasApiTokens, Notifiable;
+    use  HasApiTokens, Notifiable;
     /**
      * The attributes that are mass assignable.
      *

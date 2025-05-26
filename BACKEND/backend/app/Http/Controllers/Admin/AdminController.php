@@ -33,6 +33,11 @@ class AdminController extends Controller
         } else {
             $profile_picture = null;
         }
+        if (!$admin) {
+            return response()->json([
+                'message' => 'Invalid or missing admin token.'
+            ], 401); // Unauthorized
+        }
         $admin_id = $admin->id;
         $worker = Worker::create([
             'admin_id' => $admin_id,

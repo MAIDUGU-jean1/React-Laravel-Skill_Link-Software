@@ -13,7 +13,7 @@ function Navbar() {
      try {
       const token = localStorage.getItem('token');
 
-      await axios.get('http://localhost:8000/api/getUser',  {
+      await axios.get('http://127.0.0.1:8000/api/getUser', {
          headers: {
            Authorization: `Bearer ${token}`
          }

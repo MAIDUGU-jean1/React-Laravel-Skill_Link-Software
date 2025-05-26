@@ -22,6 +22,7 @@ function CreateWorkerForm() {
 
   // const [error, setError] = useState('');
     const navigate = useNavigate();
+    const [data, setData] = useState(null);
   
 
 
@@ -60,12 +61,12 @@ function CreateWorkerForm() {
       }, {
         headers: {
           'Content-Type': 'multipart/form-data',
-        Authorization: `Bearer ${token}`
+          Authorization: `Bearer ${token}`
         }
     }).then((response) => {
       console.log(response.data);
       navigate('/admin/worker');
-      // setData(response.data);
+      setData(response.data);
     }).catch((error) => {
       console.error('Error:', error);
       setError('Error With the Form data please check it ');
@@ -87,7 +88,7 @@ function CreateWorkerForm() {
   const fetchData = async() => {
     try {
       
-      await axios.get('http://localhost:8000/api/categories/all', {})
+      await axios.get('http://localhost:8000/api/categories/all')
       .then((response)=>{
           console.log("Categories: ", response.data);
           setCategories(response.data);
